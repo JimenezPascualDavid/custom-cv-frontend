@@ -1,7 +1,23 @@
 export default function Edit() {
   return (
     <>
-      <div>edit</div>
+      <section>
+        <aside>
+          <div>
+            <p>asd</p>
+          </div>
+          <div>
+            <p>dsadsad</p>
+          </div>
+          <div>
+            <p>dsadsad</p>
+          </div>
+          <div>
+            <p>dsadsad</p>
+          </div>
+        </aside>
+        <aside />
+      </section>
     </>
   )
 }
