@@ -8,8 +8,8 @@ import Intro from '../public/assets/home/intro.png'
 export default function Home() {
   return (
     <section>
-      <section className="bg-sky-300 h-screen w-screen flex flex-col justify-center lg:justify-evenly lg:flex-row items-center px-8">
-        <aside className="max-w-4xl space-y-5">
+      <section className="bg-sky-300 h-screen w-full flex flex-col justify-center lg:justify-evenly lg:flex-row items-center px-8">
+        <aside className="max-w-4xl space-y-5 m-10">
           <h1 className="text-5xl text-stone-50 md:text-7xl">PERSONALIZA TU CURRICULUM</h1>
           <h2 className="text-3xl sm:text-4xl text-stone-50">Destaca, Innova, Descarga</h2>
           <motion.button
@@ -20,13 +20,13 @@ export default function Home() {
             Empezar ya
           </motion.button>
         </aside>
-        <aside className="w-96 lg:w-1/3">
+        <aside className="max-w-full lg:w-1/3">
           <Image alt="custom cv homepage" className="max-w-full h-auto" src={Intro} />
         </aside>
       </section>
 
       <section>
-        <div className="h-screen w-screen px-8">
+        <div className="h-full md:h-screen w-full px-8">
           <Tabs />
         </div>
       </section>

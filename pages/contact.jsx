@@ -3,41 +3,45 @@ import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <div className="h-screen w-100 bg-sky-200">
-      <div className="h-full w-100 border-2 border-rose-500 flex flex-col justify-center items-center overflow-hidden">
-        <h1 className="text-4xl font-bold mt-60 text-stone-50 sm:text-6xl sm:-mb-32 md:text-8xl md:mt-60 md:-mb-32">
+      <div className="h-full w-100 flex flex-col justify-center items-center">
+        <div className="mt-60 ">
+        <h1 className="text-4xl font-bold  text-stone-50 sm:text-6xl  md:text-8xl ">
           CONTACTO
         </h1>
-        <div className="container mx-auto  h-full m-5 sm:flex flex-col">
+        </div>
+        <div className="container mx-auto  h-full m-5 sm:flex flex-col ">
           <form action="#" method="POST">
-            <div className="h-full  w-100 flex flex-col sm:flex-row justify-around items-center">
+            <div className="h-100  w-100 flex flex-col sm:flex-row justify-evenly items-center">
               <input
-                className="text-white shadow-inner bg-sky-300 h-12 w-5/6 m-5 sm:w-2/6 pl-4"
+                className="text-white shadow-inner m-5 sm:m-0 bg-sky-300 h-12 w-5/6  sm:w-2/6 pl-4 placeholder-white"
                 id="Name"
                 type="text"
                 autocomplete="Name"
-                value="Name"
+                placeholder="Name"
                 required
               />
               <input
-                className="text-white shadow-inner bg-sky-300 h-12 w-5/6 sm:w-2/6 pl-4"
+                className="text-white shadow-inner m-5 bg-sky-300 h-12 w-5/6 sm:w-2/6 pl-4 placeholder-white"
                 id="Email"
                 type="text"
                 autocomplete="Email"
-                value="Email"
+                placeholder="Email"
                 required
               />
+
+
             </div>
-            <div className="w-100 m-5 flex justify-around sm:-mt-16 md:-mt-20">
+            <div className="w-100  sm:w-full flex justify-center">
               <input
-                className="text-white shadow-inner bg-sky-300 h-60  w-11/12 sm:w-5/6 pl-4"
+                className="text-white shadow-inner bg-sky-300 h-60 w-10/12 sm:w-5/6 pl-4 placeholder-white"
                 id="Mensaje"
                 type="text"
                 autocomplete="Mensaje"
-                value="Text"
+                placeholder="Text"
                 required
               />
-            </div>
-            <div className="w-full sm:flex justify-start mt-12 ml-10 md:ml-24">
+            </div> 
+             <div className="w-full flex justify-evenly mt-12">
               <motion.button
                 className="rounded-sm py-1 px-6 transition-colors bg-sky-300 border-2 border-white text-white"
                 whileHover={{ scale: 1.1 }}
