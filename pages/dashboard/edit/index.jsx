@@ -1,23 +1,12 @@
-export default function Edit() {
+import { EditLayout } from '../../../layouts/EditLayout'
+
+function Edit() {
   return (
-    <>
-      <section>
-        <aside>
-          <div>
-            <p>asd</p>
-          </div>
-          <div>
-            <p>dsadsad</p>
-          </div>
-          <div>
-            <p>dsadsad</p>
-          </div>
-          <div>
-            <p>dsadsad</p>
-          </div>
-        </aside>
-        <aside />
-      </section>
-    </>
+    <section>
+      <p>Select a section to start</p>
+    </section>
   )
 }
+
+Edit.PageLayout = EditLayout
+export default Edit

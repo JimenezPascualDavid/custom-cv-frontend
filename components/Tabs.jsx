@@ -97,7 +97,9 @@ export const Tabs = () => {
           </span>
         </li>
       </ul>
-      <div className={tabs == 1 ? ' h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}>
+      <div
+        className={tabs == 1 ? ' h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}
+      >
         <div className="flex-1">
           <Image className="max-w-full h-auto" src={Edit} />
         </div>
@@ -110,7 +112,9 @@ export const Tabs = () => {
         </div>
       </div>
 
-      <div className={tabs == 2 ? 'h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}>
+      <div
+        className={tabs == 2 ? 'h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}
+      >
         <div className="flex-1">
           <p className="text-4xl p-2 sm:p-0">
             En customcv permitimos a nuestros usuarios guardar los datos en las nube para en
@@ -123,7 +127,9 @@ export const Tabs = () => {
         </div>
       </div>
 
-      <div className={tabs == 3 ? 'h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}>
+      <div
+        className={tabs == 3 ? 'h-100 w-100 hidden sm:flex justify-around items-center' : 'hidden'}
+      >
         <div className="flex-1">
           <Image className="max-w-2xl h-auto " src={Export} />
         </div>
